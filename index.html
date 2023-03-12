@@ -9,207 +9,242 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>FARMASALUD3 E-COMMERCE</title>
+    <!-- BASE STYLE -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/base.css" />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <!-- ICONSCOUT -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- PAGE STYLES -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/banner/banner.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/categorias/categorias.css" />
   </head>
   <body>
-    <header>
-      <h1>FARMASALUD3</h1>
-      <nav>
-        <ul>
-          <l1><a href="">Sobre Nosotros</a></l1>
-          <l1>
-            <a href=""> Productos </a>
+    <header class="header container">
+      <h1 class="logo">FARMASALUD3</h1>
+      <nav class="menu">
+        <ul class="menu__list">
+          <l1 class="menu__item">
+            <a
+              class="menu__item__link"
+              href="#">
+              Productos
+            </a>
           </l1>
-          <l1><a href=""> Contacto </a></l1>
-          <l1><a href="">Login</a></l1>
+          <l1 class="menu__item"
+            ><a
+              class="menu__item__link"
+              href="#contacto">
+              Contacto
+            </a></l1
+          >
+          <l1 class="menu__item"
+            ><a
+              class="menu__item__link"
+              href="#"
+              >Login</a
+            ></l1
+          >
         </ul>
+        <button class="menu__open"><i class="uil uil-bars"></i></button>
+        <button class="menu__close"><i class="uil uil-multiply"></i></button>
       </nav>
     </header>
 
     <main>
       <!-- BANNER -->
-      <section class="swiper container">
-        <div class="swiper-wrapper">
-          <article class="swiper-slide">
-            <div class="image__banner"></div>
-            <div class="banner__text">
-              <h1>Marzo de Belleza</h1>
-              <h2>Hasta 40% de descuento en productos de belleza</h2>
-              <button>Ver Productos</button>
+      <section class="banner container">
+        <div class="image__banner1"></div>
+        <article class="banner__details">
+          <div class="banner__text">
+            <h1 class="banner__text__title">Marzo de Belleza</h1>
+            <h4 class="banner__text__subtitle">Hasta 40% de descuento en productos de belleza</h4>
+            <button class="btn">Ver Productos</button>
+          </div>
+        </article>
+      </section>
+      <!-- TARJETAS -->
+      <section class="categorias container">
+        <h1 class="categorias__title">Categorías</h1>
+        <div class="categorias__cards">
+          <article class="categoria__card">
+            <a href="">
+              <img
+                class="categoria__card__img"
+                src="./assets/img/productos/banner-productos/banner2.jpg"
+                alt="" />
+              <div class="categoria__card__details">
+                <h2 class="categoria__card__details__title">Belleza</h2>
+                <p class="categoria__card__details__subtitle">
+                  Perfumes - Shampoo - Acondicionador - Desodorantes - Cremas para el Pelo
+                </p>
+              </div>
+            </a>
+          </article>
+          <article class="categoria__card">
+            <a href="">
+              <img
+                class="categoria__card__img"
+                src="./assets/img/productos/banner-productos/banner3.jpg"
+                alt="" />
+              <div class="categoria__card__details">
+                <h2 class="categoria__card__details__title">Accesorios</h2>
+                <p class="categoria__card__details__subtitle">
+                  Pulseras - collares - lentes - aros
+                </p>
+              </div>
+            </a>
+          </article>
+          <article class="categoria__card">
+            <a href="">
+              <img
+                class="categoria__card__img"
+                src="./assets/img/productos/banner-productos/banner4.jpg"
+                alt="" />
+              <div class="categoria__card__details">
+                <h2 class="categoria__card__details__title">Nutrición - Deportes</h2>
+                <p class="categoria__card__details__subtitle">
+                  Suplementos Dietarios - Protección y Recuperación - Suplementos Nutricionales -
+                  Deportes
+                </p>
+              </div>
+            </a>
+          </article>
+          <article class="categoria__card">
+            <a href="">
+              <img
+                class="categoria__card__img"
+                src="./assets/img/productos/banner-productos/banner5.jpg"
+                alt="" />
+              <div class="categoria__card__details">
+                <h2 class="categoria__card__details__title">Cuidados Personales</h2>
+                <p class="categoria__card__details__subtitle">
+                  Cuidado para la Mujer - Primeros Auxilios - Tratamientos para la Piel - Cuidado
+                  Oral
+                </p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Productos más vistos -->
+      <section class="mas-vistos container">
+        <h1>Productos más vistos</h1>
+        <div>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto1</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
             </div>
           </article>
-          <article class="swiper-slide">
-            <div class="image__banner"></div>
-            <div class="banner__text">
-              <h1>Descuentos en Accesorios</h1>
-              <h2>33% de descuentos en accesorios</h2>
-              <button>Ver Productos</button>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto2</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
             </div>
           </article>
-          <article class="swiper-slide">
-            <div class="image__banner"></div>
-            <div class="banner__text">
-              <h1>Tratamiento para la Piel Sensible</h1>
-              <h2>Hasta 30% de descuento en cremas para la piel sensible</h2>
-              <button>Ver Productos</button>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto3</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
             </div>
           </article>
-          <article class="swiper-slide">
-            <div class="image__banner"></div>
-            <div class="banner__text">
-              <h1>Promoción en Deportes</h1>
-              <h2>2x1 en muñequeras</h2>
-              <button>Ver Productos</button>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto4</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto5</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto6</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto7</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
+            </div>
+          </article>
+          <article>
+            <img
+              src=""
+              alt="" />
+            <div>
+              <h2>Producto8</h2>
+              <p>$1200</p>
+              <a href="">Ver Producto</a>
             </div>
           </article>
         </div>
       </section>
-      <!-- TARJETAS -->
-      <section>
-        <h1>Categorías</h1>
-        <article>
-          <a href="">
-            <img
-              src=""
-              alt="" />
-            <div>
-              <h2>Belleza</h2>
-              <p>Perfumes - Shampoo - Acondicionador - Desodorantes - Cremas para el Pelo</p>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a href="">
-            <img
-              src=""
-              alt="" />
-            <div>
-              <h2>Accesorios</h2>
-              <p>Pulseras - collares - lentes - aros</p>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a href="">
-            <img
-              src=""
-              alt="" />
-            <div>
-              <h2>Nutrición - Deportes</h2>
-              <p>
-                Suplementos Dietarios - Protección y Recuperación - Suplementos Nutricionales -
-                Deportes
-              </p>
-            </div>
-          </a>
-        </article>
-        <article>
-          <a href="">
-            <img
-              src=""
-              alt="" />
-            <div>
-              <h2>Cuidados Personales</h2>
-              <p>
-                Cuidado para la Mujer - Primeros Auxilios - Tratamientos para la Piel - Cuidado Oral
-              </p>
-            </div>
-          </a>
-        </article>
-      </section>
-
-      <!-- Productos más vistos -->
-      <section>
-        <h1>Productos más vistos</h1>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto1</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto2</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto3</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto4</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto5</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto6</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto7</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-        <article>
-          <img
-            src=""
-            alt="" />
-          <div>
-            <h2>Producto8</h2>
-            <p>$1200</p>
-            <a href="">Ver Producto</a>
-          </div>
-        </article>
-      </section>
     </main>
     <!-- FOOTER -->
-    <footer>
+    <footer
+      id="contacto"
+      class="footer container">
       <section>
         <h1>Contacto</h1>
         <p>Para encargar medicamentos o hacer cualquier consulta</p>
         <p>Rellene el siguiente formulario</p>
       </section>
-      <form action="">
+      <form action="" class="form">
         <fieldset>
           <div>
             <input type="text" />
@@ -226,12 +261,13 @@
             <span></span>
           </div>
         </fieldset>
-        <button>Enviar Mensaje</button>
+        <button class="btn">Enviar Mensaje</button>
       </form>
 
       <section>
         <h1>&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <script src="./js/styled.js"></script>
   </body>
 </html>
