@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height: 70vh;
+  margin-top: 2rem;
+}
+
+
+.image__banner1 {
+  filter: brightness(40%);
+  background: url('../../img/banners/banner.jpg') no-repeat center/cover;
+  width: 100vw;
+  height: 100%;
+}
+
+.banner__details {
+  position: absolute;
+}
+
+.banner__text {
+  
+  margin-left: 2rem;
+}
+
+.banner__text__title {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: var(--font-weight-title-link);
+}
+
+.banner__text__subtitle{
+  color: var(--color-white);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: var(--font-weight-text);
+}
