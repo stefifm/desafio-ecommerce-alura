@@ -1,9 +1,10 @@
 {
   "productos": [
     {
-      "nombre": "Buscapina Duo",
+      "nombre": "Dentrifico Colgate",
       "precio": "$500",
       "descripcion": "Lorem Ipsum",
+      "categoria": "Cuidado Personal",
       "imagen": "imagen1",
       "id": "1"
     }
