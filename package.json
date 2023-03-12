@@ -1,0 +1,23 @@
+{
+  "name": "crud-farmasalud3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "json-server": "^0.17.2"
+  },
+  "eslintConfig": {
+    "extends":[
+      "standard"
+    ]
+  }
+}

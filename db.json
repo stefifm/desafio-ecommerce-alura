@@ -1,0 +1,11 @@
+{
+  "productos": [
+    {
+      "nombre": "Buscapina Duo",
+      "precio": "$500",
+      "descripcion": "Lorem Ipsum",
+      "imagen": "imagen1",
+      "id": "1"
+    }
+  ]
+}
