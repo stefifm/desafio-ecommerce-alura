@@ -55,6 +55,6 @@
 }
 
 .mas-vistos__card__link {
-  color: var(--color-dark-green);
+  color: var(--color-blue-links);
   font-weight: var(--font-weight-title-link);
 }
