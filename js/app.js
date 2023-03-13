@@ -2,14 +2,16 @@ import { validaInput, validaText } from './validaciones.js'
 
 // Seleccionando los inputs y el textarea
 
-const input = document.querySelector('input')
+const inputs = document.querySelectorAll('.input, .input__inicio')
 const textarea = document.querySelector('textarea')
 
 // Capturando el evento blur para cada input
 // Validando lo que entra en cada input
 
-input.addEventListener('blur', (input) => {
-  validaInput(input.target)
+inputs.forEach(input => {
+  input.addEventListener('blur', (input) => {
+    validaInput(input.target)
+  })
 })
 
 // Capturando el evento blur para el textarea

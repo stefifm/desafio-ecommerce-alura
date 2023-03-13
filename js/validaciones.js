@@ -57,6 +57,13 @@ const mensajeError = {
     valueMissing: 'El campo Nombre no puede estar vacío',
     patternMismatch: 'No debe superar los 50 caracteres'
   },
+  email: {
+    valueMissing: 'El campo email no puede estar vacío',
+    typeMismatch: 'El correo no es válido'
+  },
+  password: {
+    valueMissing: 'El campo contraseña no puede estar vacío'
+  },
   mensaje: {
     valueMissing: 'El campo Mensaje no puede estar vacío',
     customError: 'No debe superar los 120 caracteres'
