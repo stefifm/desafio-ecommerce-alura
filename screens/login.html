@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>FARMASALUD3 E-COMMERCE</title>
+    <!-- BASE STYLE -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/base.css" />
+    <!-- GOOGLE FONTS -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+    <!-- ICONSCOUT -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- PAGE STYLES -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/login/login.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/footer/footer.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="logo"><a href="../index.html">FARMASALUD3</a></h1>
+      <div class="header__search">
+        <button class="search__btn"><i class="uil uil-search"></i></button>
+        <div class="header__search__details">
+          <input
+            class="input__search"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="search" />
+          <label
+            class="input__search__label"
+            for="search"
+            >¿Qué desea buscar?</label
+          >
+          <button class="input__search__btn">
+            <i class="uil uil-search input__search__btn__icon"></i>
+          </button>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <l1 class="menu__item">
+            <a
+              class="menu__item__link"
+              href="/screens/todos-productos.html">
+              Productos
+            </a>
+          </l1>
+          <l1 class="menu__item"
+            ><a
+              class="menu__item__link"
+              href="#contacto">
+              Contacto
+            </a></l1
+          >
+          <l1 class="menu__item"
+            ><a
+              class="menu__item__link"
+              href="#"
+              >Login</a
+            ></l1
+          >
+        </ul>
+        <button class="menu__open"><i class="uil uil-bars"></i></button>
+        <button class="menu__close"><i class="uil uil-multiply"></i></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="inicio-sesion container">
+        <div class="inicio-sesion__title">
+          <h1>Iniciar Sesión</h1>
+        </div>
+        <form
+          action=""
+          class="form-inicio">
+          <fieldset>
+            <div class="input__inicio__container">
+              <input
+                class="input__inicio"
+                id="email"
+                type="email"
+                data-tipo="email"
+                name="email"
+                placeholder="email"
+                required
+                />
+              <label
+                class="input__label"
+                for="email"
+                >Correo Electrónico</label
+              >
+              <span class="input-message-error"></span>
+            </div>
+            <div class="input__inicio__container">
+              <input
+                class="input__inicio"
+                id="password"
+                placeholder="password"
+                type="password"
+                data-tipo="password" 
+                required
+                />
+              <label
+                class="input__label"
+                for="password"
+                >Contraseña</label
+              >
+              <span class="input-message-error"></span>
+            </div>
+          </fieldset>
+          <button class="btn btn__center">Ingresar</button>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer
+      id="contacto"
+      class="footer container">
+      <section class="footer__contacto">
+        <div class="footer__contacto_text">
+          <h1 class="footer__contacto__title">Contacto</h1>
+          <p class="footer__contacto__paragraph">
+            Para encargar medicamentos o hacer cualquier consulta
+          </p>
+          <p class="footer__contacto__paragraph">Rellene el siguiente formulario</p>
+        </div>
+
+        <form
+          action=""
+          class="form">
+          <fieldset>
+            <div class="input-container">
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="nombre"
+                class="input"
+                data-tipo="nombre"
+                pattern=".{1,40}$"
+                required />
+              <label
+                class="input-label"
+                for="nombre"
+                >Nombre</label
+              >
+              <span class="input-message-error"></span>
+            </div>
+            <div class="textarea-container">
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="Mensaje"
+                data-tipo="mensaje"
+                rows="8"
+                class="textarea-input"
+                required></textarea>
+              <label
+                class="textarea-label"
+                for="mensaje"
+                >Mensaje</label
+              >
+              <span class="textarea-message-error"></span>
+            </div>
+          </fieldset>
+          <button class="btn">Enviar Mensaje</button>
+        </form>
+      </section>
+
+      <section class="footer__copy">
+        <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="../js/app.js"></script>
+    <script src="../js/styled.js"></script>
+  </body>
+</html>
