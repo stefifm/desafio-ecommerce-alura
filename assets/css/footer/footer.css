@@ -2,6 +2,7 @@
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+
 }
 .footer__contacto {
   padding-top: 2rem;
@@ -65,7 +66,7 @@
 
 }
 
-input:hover {
+.input:hover {
   border-bottom: 3px solid #6643b5;
 }
 
