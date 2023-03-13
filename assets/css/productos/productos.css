@@ -1,0 +1,60 @@
+.mas-vistos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: var(--color-light2);
+}
+
+.mas-vistos__title {
+  font-size: 1.9rem;
+  color: var(--color-black);
+  font-weight: var(--font-weight-title-link);
+  margin-bottom: 2rem;
+}
+
+.mas-vistos__cards {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100px;
+  max-width: 200px;
+  gap: 2rem;
+}
+
+.mas-vistos__card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  border-radius: 0.5rem;
+}
+
+.mas-vistos__card__img {
+  width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.mas-vistos__card__details {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mas-vistos__card__name {
+  font-size: 1.3rem;
+  color: var(--color-black);
+  font-weight: var(--font-weight-title-link);
+}
+
+.mas-vistos__card__price {
+  font-size: 1.125rem;
+  color: var(--color-black);
+  font-weight: var(--font-weight-text);
+  line-height: 1.3;
+}
+
+.mas-vistos__card__link {
+  color: var(--color-dark-green);
+  font-weight: var(--font-weight-title-link);
+}
