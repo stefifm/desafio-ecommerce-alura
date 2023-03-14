@@ -16,7 +16,9 @@ const openMenu = () => {
 // Función para abrir la búsqueda
 
 const toggleSearch = () => {
-  if (searchBox.style.display === 'none') {
+  const searchStyle = window.getComputedStyle(searchBox)
+  const display = searchStyle.getPropertyValue('display')
+  if (display === 'none') {
     searchBox.style.display = 'flex'
   } else {
     searchBox.style.display = 'none'
