@@ -35,3 +35,52 @@ body {
   background: var(--color-white);
   border: 1px solid var(--color-ligth-green);
 }
+
+/* ERROR STYLES */
+
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.input-container--invalid .input .input__inicio .input__agregar{
+  border: 1px solid var(--color-warning);
+  border-radius: 7px;
+}
+
+.input-container--invalid .input-label .input__label {
+  color: var(--color-warning);
+}
+
+.input-message-error {
+  display: none;
+}
+
+.input-container--invalid .input-message-error {
+  color: var(--color-warning);
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.textarea-container--invalid {
+  margin-bottom: 0.5rem;
+}
+
+.textarea-container--invalid .textarea-input .textarea__input {
+  border: 1px solid var(--color-warning);
+}
+
+.textarea-container--invalid .textarea-label .textarea__label {
+  color: var(--color-warning);
+}
+
+.textarea-message-error {
+  display: none;
+}
+
+.textarea-container--invalid .textarea-message-error {
+  display: block;
+  color: var(--color-warning);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}

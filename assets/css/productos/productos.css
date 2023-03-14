@@ -27,8 +27,8 @@
 .mas-vistos__card {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
-  width: 100%;
+  min-width: 60px;
+  max-width: 120px;
   background: var(--color-white);
   border-radius: 0.5rem;
   margin-left: 0.5rem;
