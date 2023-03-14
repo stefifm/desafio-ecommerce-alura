@@ -42,7 +42,8 @@ function mostrarError (tipoInput, input) {
 const validadores = {
   // Se le asigna al data-tipo (atributo HTML)
   // la validación sobre el input o textarea
-  mensaje: (textarea) => validarTextarea(textarea)
+  mensaje: (textarea) => validarTextareaContacto(textarea),
+  descripcion: (textarea) => validarTextareaDescripcion(textarea)
 }
 
 const tipoErrores = [
@@ -67,15 +68,38 @@ const mensajeError = {
   mensaje: {
     valueMissing: 'El campo Mensaje no puede estar vacío',
     customError: 'No debe superar los 120 caracteres'
+  },
+  nombreProducto: {
+    valueMissing: 'El campo Nombre del producto no puede estar vacío',
+    patternMismatch: 'No debe superar los 20 caracteres'
+  },
+  precio: {
+    valueMissing: 'El campo Precio no puede estar vacío',
+    typeMismatch: 'El campo Precio solo acepta números'
+  },
+  categoria: {
+    valueMissing: 'El campo Categoría no puede estar vacío'
+  },
+  descripcion: {
+    valueMissing: 'El campo Descripcion no puede estar vacío',
+    customError: 'No debe superar los 150 caracteres'
   }
-
 }
 
-function validarTextarea (textarea) {
-  const textLength = textarea.parentElement.querySelector('textarea').value.length
+function validarTextareaContacto (textarea) {
+  const textLength = textarea.parentElement.querySelector('.textarea-input').value.length
   let msgError = ''
   if (textLength > 120) {
     msgError = 'No debe superar los 120 caracteres'
+  }
+  textarea.setCustomValidity(msgError)
+}
+
+function validarTextareaDescripcion (textarea) {
+  const textLength = textarea.parentElement.querySelector('.textarea__input').value.length
+  let msgError = ''
+  if (textLength > 150) {
+    msgError = 'No debe superar los 150 caracteres'
   }
   textarea.setCustomValidity(msgError)
 }
