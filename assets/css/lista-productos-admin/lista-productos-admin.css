@@ -1,6 +1,6 @@
 .lista-productos {
   background: var(--color-light4);
-  width: 100%;
+
   
 }
 
@@ -15,14 +15,12 @@
 
 .lista-productos__header__title {
   font-size: 1.9rem;
-  margin-right: 2.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   color: var(--color-black);
   font-weight: var(--font-weight-title-link);
 }
 
-.lista-productos__header__link {
-  margin-right: 2.5rem;
-}
 
 .lista-productos__cards {
   display: flex;
@@ -43,11 +41,31 @@
 .lista-productos__card__img {
   width: 100%;
   padding-right: 1rem;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .lista-productos__card__details {
   padding-top: 0.5rem;
+}
+
+.lista-productos__card__name {
+  color: var(--color-black);
+  font-weight: var(--font-weight-text);
+  font-size: 1.125rem;
+  padding-bottom: 0.7rem;
+}
+
+.lista-productos__card__price {
+  color: var(--color-black);
+  font-weight: var(--font-weight-title-link);
+  font-size: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.lista-productos__card__id {
+  color: var(--color-black);
+  font-weight: var(--font-weight-text);
+  font-size: 1.125rem;
 }
 
 .lista-productos__card__edit, .lista-productos__card__delete{
