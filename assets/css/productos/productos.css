@@ -7,6 +7,10 @@
   background: var(--color-light2);
 }
 
+.productos {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+}
 .mas-vistos__title {
   font-size: 1.9rem;
   color: var(--color-black);
@@ -17,16 +21,17 @@
 .mas-vistos__cards {
   display: flex;
   flex-wrap: wrap;
-  min-width: 100px;
-  max-width: 200px;
   gap: 2rem;
 }
 
 .mas-vistos__card {
   display: flex;
   flex-direction: column;
+  max-width: 40%;
+  width: 100%;
   background: var(--color-white);
   border-radius: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .mas-vistos__card__img {
@@ -35,7 +40,7 @@
 }
 
 .mas-vistos__card__details {
-  padding: 1.2rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
