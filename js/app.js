@@ -22,6 +22,8 @@ textareaContacto.addEventListener('blur', (text) => {
   validaText(text.target)
 })
 
-textareaDescripcion.addEventListener('blur', (text) => {
-  validaText(text.target)
-})
+if (textareaDescripcion) {
+  textareaDescripcion.addEventListener('blur', (text) => {
+    validaText(text.target)
+  })
+}
