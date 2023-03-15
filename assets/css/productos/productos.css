@@ -32,6 +32,7 @@
   background: var(--color-white);
   border-radius: 0.5rem;
   margin-left: 0.5rem;
+  padding-right: 1rem;
 }
 
 .mas-vistos__card__img {
