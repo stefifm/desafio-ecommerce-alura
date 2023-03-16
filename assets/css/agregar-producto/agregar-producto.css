@@ -24,6 +24,10 @@
   margin-bottom: 1rem;
 }
 
+.img__preview {
+  width: 100%;
+}
+
 .input__agregar__container {
   display: flex;
   flex-direction: column;

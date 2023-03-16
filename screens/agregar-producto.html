@@ -24,6 +24,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet" />
+
     <!-- ICONSCOUT -->
     <link
       rel="stylesheet"
@@ -97,18 +98,22 @@
         </div>
         <form
           action=""
-          class="form-agregar">
+          class="form-agregar"
+          data-tipo="form">
           <fieldset>
             <div class="input__agregar__container">
               <input
                 class="input__agregar__img"
                 id="file"
                 type="file"
-                data-tipo="file"
                 name="file"
                 placeholder="Agregue una imagen"
-                required
-                />
+                required />
+              <img
+                id="img__preview"
+                class="img__preview"
+                src=""
+                alt="Imagen previa..." />
               <span class="input-message-error"></span>
             </div>
             <div class="input__agregar__container">
@@ -118,9 +123,8 @@
                 placeholder="Nombre del producto"
                 type="text"
                 data-tipo="nombreProducto"
-                pattern=".{1,20}$" 
-                required
-                />
+                pattern=".{1,20}$"
+                required />
               <label
                 class="input__label"
                 for="nombreProducto"
@@ -134,9 +138,8 @@
                 id="precio"
                 placeholder="Precio"
                 type="number"
-                data-tipo="precio" 
-                required
-                />
+                data-tipo="precio"
+                required />
               <label
                 class="input__label"
                 for="precio"
@@ -150,9 +153,8 @@
                 id="categoria"
                 placeholder="Categoria"
                 type="text"
-                data-tipo="categoria" 
-                required
-                />
+                data-tipo="categoria"
+                required />
               <label
                 class="input__label"
                 for="categoria"
@@ -240,6 +242,14 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      type="module"
+      src="../controllers/agregar-producto.controllers.js"></script>
     <script
       type="module"
       src="../js/app.js"></script>
