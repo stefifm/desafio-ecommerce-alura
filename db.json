@@ -1,12 +1,124 @@
 {
   "productos": [
     {
-      "nombre": "",
-      "precio": "",
-      "descripcion": "",
-      "categoria": "",
-      "imagen": "",
-      "id": ""
+      "nombre": "Pulsera de madera",
+      "precio": "123",
+      "descripcion": "Pulsera de madera con hilo reforzado",
+      "categoria": "accesorios",
+      "imagen": "https://d2r9epyceweg5n.cloudfront.net/stores/927/454/products/pulsera-hombre-madera-piedras-leonnegro11-cc69b0a5591dd9435b15526720184880-1024-1024.jpg",
+      "id": "1"
+    },
+    {
+      "nombre": "Argolla de acero",
+      "precio": "1467",
+      "descripcion": "Aros de acero quirúrgico de todos los tamaños",
+      "categoria": "accesorios",
+      "imagen": "https://joyasclaudiodisalerno.com.ar/wp-content/uploads/2020/07/FATEAIT38X1.jpg",
+      "id": "2"
+    },
+    {
+      "nombre": "Pulsera de oro",
+      "precio": "2345",
+      "descripcion": "Pulsera de oro de un 1 kilate. Ideal para casamientos",
+      "categoria": "accesorios",
+      "imagen": "https://www.costco.com.mx/medias/sys_master/products/h2b/h06/32243613270046.jpg",
+      "id": "3"
+    },
+    {
+      "nombre": "Pulsera de plata",
+      "precio": "4909",
+      "descripcion": "Pulsera de plata con corazón. No se oxida",
+      "categoria": "accesorios",
+      "imagen": "https://d2r9epyceweg5n.cloudfront.net/stores/104/481/products/pulsera-de-plata-y-dije-2338-joyeria-andrea-11-c415c997a695d1444d15884682697652-1024-1024.jpg",
+      "id": "4"
+    },
+    {
+      "nombre": "Lentes de sol",
+      "precio": "780",
+      "descripcion": "Lentes de sol unisex. Armazón de plástico y color negro con un estilo clásico",
+      "categoria": "accesorios",
+      "imagen": "https://i.pinimg.com/originals/56/c4/7d/56c47d01648a12d958e34b81069cc583.jpg",
+      "id": "5"
+    },
+    {
+      "nombre": "Shampoo Triatop",
+      "precio": "1230",
+      "descripcion": "Shampoo Triatop para el tratamiento de la caspa en hombres",
+      "categoria": "belleza",
+      "imagen": "https://cdn.batitienda.com/baticloud/images/product_picture_e0af2b607aea48c29473eaba8519644e_637858030545825455_0_m.jpg",
+      "id": "6"
+    },
+    {
+      "nombre": "Tintura Nutriesse",
+      "precio": "2450",
+      "descripcion": "Tintura Nutriesse Nº 51 para cabellos castaños",
+      "categoria": "belleza",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_614634-MLA50969923355_082022-W.jpg",
+      "id": "7"
+    },
+    {
+      "nombre": "Acondicionador Bagó",
+      "precio": "560",
+      "descripcion": "Acondicionador Bagó Nutrición Profunda con pura vitamina A",
+      "categoria": "belleza",
+      "imagen": "https://www.farmacialeloir.com.ar/img/articulos/2021/12/bagovit_capilar_nutricion_profunda_acondicionador_imagen1.jpg",
+      "id": "8"
+    },
+    {
+      "nombre": "Elvive Dream",
+      "precio": "1450",
+      "descripcion": "Elvive Dream Long. Crema para peinar pelos largos y dañado.",
+      "categoria": "belleza",
+      "imagen": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1664521908-acondicionador-dream-long-loreal-1664521889.jpg",
+      "id": "9"
+    },
+    {
+      "nombre": "Dove Invisible",
+      "precio": "380",
+      "descripcion": "Desodorante en barra Dove Invisible Dry",
+      "categoria": "belleza",
+      "imagen": "https://cdn.batitienda.com/baticloud/images/product_picture_abc55fb6909e47a9ad5d50ba1e01d9b3_637624682023968373_0_m.jpg",
+      "id": "10"
+    },
+    {
+      "nombre": "Bagó Activamente",
+      "precio": "1329",
+      "descripcion": "Bagó Activamente caja de 15 unidades",
+      "categoria": "nutricion-deportes",
+      "imagen": "https://farmacityar.vteximg.com.br/arquivos/ids/231137-1000-1000/221474_suplemento-dietario-bago-activamente-x-30-un_imagen-1.jpg",
+      "id": "11"
+    },
+    {
+      "nombre": "Muñequera protectora",
+      "precio": "2908",
+      "descripcion": "Muñequera para proteger y sostener. Para muñeca derecha",
+      "categoria": "nutricion-deportes",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Wrist_brace.jpg",
+      "id": "12"
+    },
+    {
+      "nombre": "Cabestrillo derecho",
+      "precio": "4567",
+      "descripcion": "Cabestrillo de una tira para brazo derecho",
+      "categoria": "nutricion-deportes",
+      "imagen": "https://tekielar.vtexassets.com/arquivos/ids/160698-800-450?v=637846844127930000&width=800&height=450&aspect=true",
+      "id": "13"
+    },
+    {
+      "nombre": "Centrum Mujer",
+      "precio": "2345",
+      "descripcion": "Complejo vitamínico Centrum Mujer de 30 pastillas",
+      "categoria": "nutricion-deportes",
+      "imagen": "https://http2.mlstatic.com/D_NQ_NP_854725-MLA48124357365_112021-O.jpg",
+      "id": "14"
+    },
+    {
+      "nombre": "Redoxon Plus",
+      "precio": "1007",
+      "descripcion": "Redoxon Plus con vitamina C y Zinc para reforzar las defensas",
+      "categoria": "nutricion-deportes",
+      "imagen": "https://tienda.bayer.com/3020-large_default/redoxon-plus.jpg",
+      "id": "15"
     }
   ]
 }
