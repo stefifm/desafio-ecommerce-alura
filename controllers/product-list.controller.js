@@ -16,7 +16,7 @@ const createLine = (nombre, precio, id, imagen) => {
     <div class="lista-productos__card_details__btn">
       <a
         class="lista-productos__card__edit btn"
-        href=""
+        href="../screens/editar-producto.html?id=${id}"
         >Editar</a
       >
       <button class="lista-productos__card__delete btn" id=${id}>Eliminar</button>
@@ -35,9 +35,23 @@ const createLine = (nombre, precio, id, imagen) => {
 
     try {
       await productService.deleteProduct(id)
-      window.alert('Se eliminó el producto')
+      Swal.fire({
+        title: 'Se eliminó el producto con éxito!!!',
+        text: 'El producto fue eliminado con éxito',
+        icon: 'success',
+        confirmButtonText: 'Continuar'
+      }).then(() => {
+        window.location.href = '../screens/lista-productos-admin.html'
+      })
     } catch (error) {
-      window.alert('Se produjo un error')
+      Swal.fire({
+        title: 'Hubo un error!!!',
+        text: 'Se produjo un error. Intente más tarde',
+        icon: 'error',
+        confirmButtonText: 'Continuar'
+      }).then(() => {
+        window.location.href = '../screens/lista-productos-admin.html'
+      })
     }
   })
 
@@ -54,7 +68,14 @@ const render = async () => {
       div.appendChild(newLine)
     })
   } catch (error) {
-    window.alert('hubo un error')
+    Swal.fire({
+      title: 'Hubo un error!!!',
+      text: 'Se produjo un error. Intente más tarde',
+      icon: 'error',
+      confirmButtonText: 'Continuar'
+    }).then(() => {
+      window.location.href = '../screens/lista-productos-admin.html'
+    })
   }
 }
 
