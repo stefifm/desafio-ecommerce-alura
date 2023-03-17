@@ -1,3 +1,5 @@
+const productList = () => fetch('https://farmasalud3-api-alura.onrender.com/productos').then(res => res.json())
+
 const createProduct = (imagen, nombre, precio, categoria, descripcion) => {
   return fetch('https://farmasalud3-api-alura.onrender.com/productos', {
     method: 'POST',
@@ -8,6 +10,17 @@ const createProduct = (imagen, nombre, precio, categoria, descripcion) => {
   })
 }
 
+const deleteProduct = (id) => {
+  return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`, {
+    method: 'DELETE'
+  })
+}
+
+const productDetail = (id) => fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`).then(res => res.json())
+
 export const productService = {
-  createProduct
+  productList,
+  createProduct,
+  deleteProduct,
+  productDetail
 }
