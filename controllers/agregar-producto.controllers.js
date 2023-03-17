@@ -30,8 +30,22 @@ form.addEventListener('submit', async (e) => {
   const descripcion = document.querySelector('[data-tipo=descripcion]').value
   try {
     await productService.createProduct(imagen, nombre, precio, categoria.toLowerCase(), descripcion)
-    window.alert('Se agrego el producto')
+    Swal.fire({
+      title: 'Producto agregado!!!',
+      text: 'El producto fue agregado con éxito',
+      icon: 'success',
+      confirmButtonText: 'Continuar'
+    }).then(() => {
+      window.location.href = '../screens/lista-productos-admin.html'
+    })
   } catch (error) {
-    window.alert('Hubo un error')
+    Swal.fire({
+      title: 'Hubo un error!!!',
+      text: 'Se produjo un error. Intente más tarde',
+      icon: 'error',
+      confirmButtonText: 'Continuar'
+    }).then(() => {
+      window.location.href = '../screens/lista-productos-admin.html'
+    })
   }
 })

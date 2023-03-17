@@ -16,11 +16,25 @@ const deleteProduct = (id) => {
   })
 }
 
-const productDetail = (id) => fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`).then(res => res.json())
+const productDetail = (id) => {
+  return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`).then(res => res.json())
+}
+
+const updateProduct = (imagen, nombre, precio, categoria, descripcion, id) => {
+  return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-type': 'application/json'
+    },
+    body: JSON.stringify({ imagen, nombre, precio, categoria, descripcion })
+  }).then(res => res)
+    .catch(error => console.log(error))
+}
 
 export const productService = {
   productList,
   createProduct,
   deleteProduct,
-  productDetail
+  productDetail,
+  updateProduct
 }
