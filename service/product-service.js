@@ -35,11 +35,16 @@ const productName = (nombre) => {
   return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${nombre}`).then(res => res.json())
 }
 
+const getLimitProduct = () => {
+  return fetch('https://farmasalud3-api-alura.onrender.com/productos?_page=1&_limit=4').then(res => res.json())
+}
+
 export const productService = {
   productList,
   createProduct,
   deleteProduct,
   productDetail,
   updateProduct,
-  productName
+  productName,
+  getLimitProduct
 }
