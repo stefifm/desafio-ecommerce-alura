@@ -119,6 +119,46 @@
       "categoria": "nutricion-deportes",
       "imagen": "https://tienda.bayer.com/3020-large_default/redoxon-plus.jpg",
       "id": "15"
+    },
+    {
+      "nombre": "Kotex",
+      "precio": "250",
+      "descripcion": "Protector diaro Kotex clásico. Paquete de 20 unidades",
+      "categoria": "cuidado personal",
+      "imagen": "https://farmacityar.vteximg.com.br/arquivos/ids/201607-1000-1000/215292_protectores-diarios-kotex-antibacterial-x-60-un_imagen-1.jpg",
+      "id": "16"
+    },
+    {
+      "nombre": "Off",
+      "precio": "800",
+      "descripcion": "Repelente para mosquitos Off en aerosol de 170 gramos",
+      "categoria": "cuidado personal",
+      "imagen": "https://offautan-uc1.azureedge.net/-/media/images/off/mx/products/hero/off_mx_family_aero_hero_2x.jpg",
+      "id": "17"
+    },
+    {
+      "nombre": "Colgate",
+      "precio": "950",
+      "descripcion": "Crema dental Colgate Triple Acción: Protección, Extra Blancura y Frescura. Caja de 70 gramos",
+      "categoria": "cuidado personal",
+      "imagen": "https://pedidosfarma.vtexassets.com/arquivos/ids/188447/Colgate-Triple-Accion-Extra-Blancura-Crema-Dental-70g.jpg",
+      "id": "18"
+    },
+    {
+      "nombre": "Dermaglos Solar",
+      "precio": "560",
+      "descripcion": "Protector solar Dermaglos de FPS 50 y 50 ml. Resistente al agua y deja la piel con una sensación agradable",
+      "categoria": "cuidado personal",
+      "imagen": "https://www.dermaglos.com/Portals/0/Images/Articles/dmg_nota2_oct18.jpg",
+      "id": "19"
+    },
+    {
+      "nombre": "Combo Dermaglos",
+      "precio": "600",
+      "descripcion": "Combo limpieza facial Dermaglos: Tónico Hidratante, Gel de Limpieza, Gel Hidratante y Crema Protectora de 30 FPS",
+      "categoria": "cuidado personal",
+      "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/213/051/products/rutina-dermaglos-piel-mixta1-b5957cd42599e6834116521213159993-640-0.jpeg",
+      "id": "20"
     }
   ]
 }
