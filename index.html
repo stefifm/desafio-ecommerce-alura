@@ -102,7 +102,7 @@
           <div class="banner__text">
             <h1 class="banner__text__title">Marzo de Belleza</h1>
             <h4 class="banner__text__subtitle">Hasta 40% de descuento en productos de belleza</h4>
-            <button class="btn">Ver Productos</button>
+            <a href="./screens/belleza.html" class="btn">Ver Productos</a>
           </div>
         </article>
       </section>
@@ -111,7 +111,7 @@
         <h1 class="categorias__title">Categorías</h1>
         <div class="categorias__cards">
           <article class="categoria__card">
-            <a href="">
+            <a href="./screens/belleza.html">
               <img
                 class="categoria__card__img"
                 src="./assets/img/productos/banner-productos/banner2.jpg"
@@ -125,7 +125,7 @@
             </a>
           </article>
           <article class="categoria__card">
-            <a href="">
+            <a href="./screens/accesorios.html">
               <img
                 class="categoria__card__img"
                 src="./assets/img/productos/banner-productos/banner3.jpg"
@@ -139,7 +139,7 @@
             </a>
           </article>
           <article class="categoria__card">
-            <a href="">
+            <a href="./screens/nutricion-deportes.html">
               <img
                 class="categoria__card__img"
                 src="./assets/img/productos/banner-productos/banner4.jpg"
@@ -154,7 +154,7 @@
             </a>
           </article>
           <article class="categoria__card">
-            <a href="">
+            <a href="./screens/cuidados-personales.html">
               <img
                 class="categoria__card__img"
                 src="./assets/img/productos/banner-productos/banner5.jpg"
@@ -174,66 +174,9 @@
       <!-- Productos más vistos -->
       <section class="mas-vistos container">
         <h1 class="mas-vistos__title">Productos más vistos</h1>
-        <div class="mas-vistos__cards">
+        <div class="mas-vistos__cards" data-tipo="productCards">
           <article class="mas-vistos__card">
-            <img
-              src="./assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="./screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="./assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="./screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="./assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="./screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="./assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="./screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
+
           </article>
         </div>
       </section>
@@ -297,6 +240,8 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./controllers/mas-vistos.controller.js"></script>
     <script
       type="module"
       src="./js/app.js"></script>
