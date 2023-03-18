@@ -43,7 +43,7 @@ const renderProducts = async () => {
       icon: 'error',
       confirmButtonText: 'Continuar'
     }).then(() => {
-      window.location.href = '../screens/lista-productos-admin.html'
+      window.location.href = '../index.html'
     })
   }
 }
