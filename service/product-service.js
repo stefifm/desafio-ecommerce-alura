@@ -31,10 +31,15 @@ const updateProduct = (imagen, nombre, precio, categoria, descripcion, id) => {
     .catch(error => console.log(error))
 }
 
+const productName = (nombre) => {
+  return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${nombre}`).then(res => res.json())
+}
+
 export const productService = {
   productList,
   createProduct,
   deleteProduct,
   productDetail,
-  updateProduct
+  updateProduct,
+  productName
 }

@@ -93,67 +93,8 @@
       <!-- Productos -->
       <section class="mas-vistos productos container">
         <h1 class="mas-vistos__title">Todos los productos</h1>
-        <div class="mas-vistos__cards">
-          <article class="mas-vistos__card">
-            <img
-              src="../assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="../screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="../assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="../screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="../assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="../screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
-          <article class="mas-vistos__card">
-            <img
-              src="../assets/img/productos/belleza/shampoo-acondicionador.jpg"
-              alt="Shampoo y Acondicionador"
-              class="mas-vistos__card__img" />
-            <div class="mas-vistos__card__details">
-              <h2 class="mas-vistos__card__name">Producto1</h2>
-              <p class="mas-vistos__card__price">$1200</p>
-              <a
-                class="mas-vistos__card__link"
-                href="../screens/descripcion-producto.html"
-                >Ver Producto</a
-              >
-            </div>
-          </article>
+        <div class="mas-vistos__cards" data-tipo="productCards">
+
         </div>
       </section>
     </main>
@@ -216,6 +157,8 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="../controllers/all-products.controller.js"></script>
     <script
       type="module"
       src="../js/app.js"></script>

@@ -43,7 +43,14 @@ const getProductDetail = async () => {
       throw new Error()
     }
   } catch (error) {
-    window.alert('Hubo un error')
+    Swal.fire({
+      title: 'Hubo un error!!!',
+      text: 'Se produjo un error. Intente más tarde',
+      icon: 'error',
+      confirmButtonText: 'Continuar'
+    }).then(() => {
+      window.location.href = '../screens/lista-productos-admin.html'
+    })
   }
 }
 
