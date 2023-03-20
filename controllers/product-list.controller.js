@@ -80,23 +80,3 @@ const render = async () => {
 }
 
 render()
-
-const search = document.querySelector('[data-tipo="search"]')
-
-const renderProduct = async () => {
-  try {
-    const productName = await productService.productName(search.value)
-    console.log(productName)
-  } catch (error) {
-    Swal.fire({
-      title: 'Hubo un error!!!',
-      text: 'Se produjo un error. Intente más tarde',
-      icon: 'error',
-      confirmButtonText: 'Continuar'
-    }).then(() => {
-      window.location.href = '../screens/lista-productos-admin.html'
-    })
-  }
-}
-
-renderProduct()
