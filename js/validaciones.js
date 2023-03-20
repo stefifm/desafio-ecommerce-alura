@@ -78,7 +78,7 @@ const mensajeError = {
     typeMismatch: 'El campo Precio solo acepta números'
   },
   categoria: {
-    valueMissing: 'El campo Categoría no puede estar vacío'
+    valueMissing: 'El campo Categoría no puede estar vacío. Las opciones y forma de escribir: accesorios, belleza, nutricion-deportes, cuidado personal'
   },
   descripcion: {
     valueMissing: 'El campo Descripcion no puede estar vacío',
