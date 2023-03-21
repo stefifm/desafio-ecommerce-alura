@@ -18,6 +18,15 @@ const previewFile = () => {
 
 imgFile.addEventListener('change', previewFile)
 
+window.addEventListener('DOMContentLoaded', () => {
+  Swal.fire({
+    title: 'ATENCIÓN',
+    text: 'Las opciones en el campo Categoría: "accesorios, belleza, nutricion-deportes, cuidado personal". Todo en minúscula, sin acentos y guión medio solo en "nutricion-deportes". "cuidado personal" tiene un espacio',
+    icon: 'warning',
+    confirmButtonText: 'Continuar'
+  })
+})
+
 // Para agregar un producto
 const form = document.querySelector('[data-tipo="form"]')
 
