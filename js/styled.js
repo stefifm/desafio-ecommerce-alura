@@ -10,7 +10,9 @@ const openMenu = () => {
   navList.style.display = 'flex'
   closeMenuBtn.style.display = 'inline-block'
   openMenuBtn.style.display = 'none'
-  searchBox.style.display = 'none'
+  if (window.innerWidth < 768) {
+    searchBox.style.display = 'none'
+  }
 }
 
 // Función para abrir la búsqueda
@@ -40,6 +42,7 @@ const closeMenu = () => {
 // de abrir y cerrar menú
 
 openMenuBtn.addEventListener('click', openMenu)
+
 closeMenuBtn.addEventListener('click', closeMenu)
 
 // Cerrar el menú después de que se haya elegido una sección

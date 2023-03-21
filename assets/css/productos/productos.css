@@ -63,3 +63,11 @@
   color: var(--color-blue-links);
   font-weight: var(--font-weight-title-link);
 }
+ /* TABLETS */
+
+ @media screen and (min-width: 768px) {
+  .mas-vistos__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+ }

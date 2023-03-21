@@ -125,9 +125,6 @@
   text-transform: uppercase;
 }
 
-
-
-
 .search__btn, .menu__open, .menu__close {
   display: inline-block;
   margin-right: 1.4rem;
@@ -139,4 +136,23 @@
 }
 .menu__close {
   display: none;
+}
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-right: 5%;
+    padding-left: 2%;
+  }
+
+  .search__btn {
+    display: none;
+  }
+
+  .header__search__details {
+    display: flex;
+    right: 10rem;
+    top: 0.7rem;
+  }
 }

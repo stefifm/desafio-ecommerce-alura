@@ -53,3 +53,13 @@
   font-weight: var(--font-weight-text);
   line-height: 1.3;
 }
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+  .categorias__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+  }
+}
