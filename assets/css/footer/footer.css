@@ -148,3 +148,28 @@
   font-size: 1.2rem;
   font-weight: var(--font-weight-text);
 }
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+  .footer__contacto {
+    flex-direction: row;
+  }
+
+  .footer__contacto_text {
+    width: 45%;
+
+  }
+  .footer__contacto_text {
+    text-align: center;
+  }
+
+  .form {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn__form {
+    width: 100%;
+  }
+}

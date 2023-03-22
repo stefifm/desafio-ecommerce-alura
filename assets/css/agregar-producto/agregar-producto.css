@@ -14,6 +14,13 @@
   margin-bottom: 4rem;
 }
 
+.form-agregar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 ::-webkit-file-upload-button {
   background: var(--color-dark-green);
   border: 1px solid transparent;
@@ -108,7 +115,6 @@
   transition: all 0.25s;
 }
 
-
 .textarea__input:not(:placeholder-shown) + .textarea__label,
 .textarea__input:focus + .textarea__label {
   font-size: 0.875rem;
@@ -116,6 +122,16 @@
   transition: all 0.25s;
 }
 
-.btn__agregar {
-  width: 100%;
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+
+  .input__agregar {
+    width: 25rem;
+  }
+
+  .textarea__input {
+    width: 24rem;
+  }
 }

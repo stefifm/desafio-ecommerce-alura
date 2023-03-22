@@ -74,3 +74,19 @@
   margin: auto;
 }
 
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+  .form-inicio {
+    align-items: center;
+    width: 100%;
+  }
+
+  .btn__center {
+    width: 57%;
+  }
+
+  .input__inicio {
+    width: 25rem;
+  }
+}
