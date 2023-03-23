@@ -41,6 +41,7 @@
       href="../assets/css/footer/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header container">
       <h1 class="logo"><a href="#">FARMASALUD3</a></h1>
       <nav class="menu">
@@ -73,6 +74,7 @@
     </header>
 
     <main>
+      <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
       <section class="agregar-producto container">
         <div class="agregar-producto__title">
           <h1>Agregar Producto</h1>
@@ -160,7 +162,11 @@
               <span class="textarea-message-error"></span>
             </div>
           </fieldset>
-          <button type="submit" class="btn btn__agregar">Agregar Producto</button>
+          <button
+            type="submit"
+            class="btn btn__agregar">
+            Agregar Producto
+          </button>
         </form>
       </section>
     </main>
@@ -178,7 +184,8 @@
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/mwkjnrez"
+          method="POST"
           class="form">
           <fieldset>
             <div class="input-container">
@@ -223,15 +230,19 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- UUID -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
       integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
+    <!-- CONTROLLERS -->
     <script
       type="module"
       src="../controllers/agregar-producto.controllers.js"></script>
+    <!-- VALIDACIONES Y ESTILADO CON JS -->
     <script
       type="module"
       src="../js/app.js"></script>

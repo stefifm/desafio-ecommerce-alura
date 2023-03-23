@@ -15,7 +15,8 @@ const openMenu = () => {
   }
 }
 
-// Función para abrir la búsqueda
+// Función para abrir la caja de búsqueda
+// en pantallas menores a 1024px
 
 const toggleSearch = () => {
   const searchStyle = window.getComputedStyle(searchBox)

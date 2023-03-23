@@ -5,6 +5,8 @@ const div = document.querySelector('[data-tipo="tarjetas"]')
 
 const searchInput = document.querySelector('[data-tipo="search"]')
 
+// Función para crear una estructura article para mostrar los productos
+
 const createLine = (nombre, precio, id, imagen) => {
   const line = document.createElement('article')
   line.classList.add('lista-productos__card')
@@ -33,6 +35,7 @@ const createLine = (nombre, precio, id, imagen) => {
 
   line.innerHTML = content
 
+  // Para eliminar un producto
   const btn = line.querySelector('button')
 
   btn.addEventListener('click', async () => {
@@ -63,6 +66,8 @@ const createLine = (nombre, precio, id, imagen) => {
   return line
 }
 
+// Para mostrar todos los productos en el listado del administrador
+
 const render = async () => {
   try {
     const productList = await loadProducts()
@@ -83,6 +88,8 @@ const render = async () => {
 }
 
 render()
+
+// Para realizar la búsqueda de un producto en el listado del administrador
 
 searchInput.addEventListener('keyup', async () => {
   const products = await loadProducts()

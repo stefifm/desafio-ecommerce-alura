@@ -40,6 +40,7 @@
       href="../assets/css/footer/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header container">
       <h1 class="logo"><a href="../index.html">FARMASALUD3</a></h1>
       <div class="header__search">
@@ -50,15 +51,16 @@
             type="search"
             name="search"
             id="search"
-            placeholder="search" 
-            data-tipo="search"
-            />
+            placeholder="search"
+            data-tipo="search" />
           <label
             class="input__search__label"
             for="search"
             >Buscar en belleza</label
           >
-          <button class="input__search__btn"><i class="uil uil-search input__search__btn__icon"></i></button>
+          <button class="input__search__btn">
+            <i class="uil uil-search input__search__btn__icon"></i>
+          </button>
         </div>
       </div>
       <nav class="menu">
@@ -91,13 +93,12 @@
     </header>
 
     <main>
-
-      <!-- Productos -->
+      <!-- PRODUCTOS DE BELLEZA -->
       <section class="mas-vistos productos container">
         <h1 class="mas-vistos__title">Belleza</h1>
-        <div class="mas-vistos__cards" data-tipo="productCards">
-
-        </div>
+        <div
+          class="mas-vistos__cards"
+          data-tipo="productCards"></div>
       </section>
     </main>
     <!-- FOOTER -->
@@ -114,7 +115,8 @@
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/mwkjnrez"
+          method="POST"
           class="form">
           <fieldset>
             <div class="input-container">
@@ -159,8 +161,13 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="../controllers/filter-by-belleza.controller.js"></script>
+    <!-- CONTROLLERS -->
+    <script
+      type="module"
+      src="../controllers/filter-by-belleza.controller.js"></script>
+    <!-- VALIDACIONES Y ESTILADO CON JS -->
     <script
       type="module"
       src="../js/app.js"></script>

@@ -2,6 +2,8 @@ import { productService } from '../service/product-service.js'
 
 const form = document.querySelector('[data-tipo="form"]')
 
+// Para que se muestre una imagen previa
+
 const imgFile = document.querySelector('#file')
 
 const previewFile = () => {
@@ -19,6 +21,8 @@ const previewFile = () => {
 }
 
 imgFile.addEventListener('change', previewFile)
+
+// Para obtener los datos de un producto y mostrarlo en cada campo del formulario
 
 const getProductDetail = async () => {
   const url = new URL(window.location)
@@ -55,6 +59,8 @@ const getProductDetail = async () => {
 }
 
 getProductDetail()
+
+// Para poder actualizar los datos de un producto
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault()

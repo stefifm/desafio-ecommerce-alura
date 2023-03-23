@@ -3,11 +3,15 @@ import { createLineUserView, loadProducts } from '../utils/productsList.js'
 const div = document.querySelector('[data-tipo="productCards"]')
 const searchInput = document.querySelector('[data-tipo="search"]')
 
+// Función que devuelve una nueva lista con productos filtrados por categoría
+
 const loadProductsFilter = async () => {
   const productList = await loadProducts()
   const category = productList.filter(data => data.categoria === 'accesorios')
   return category
 }
+
+// Función para mostrar los productos filtrados
 
 const renderProducts = async () => {
   try {
@@ -29,6 +33,8 @@ const renderProducts = async () => {
 }
 
 renderProducts()
+
+// Función para filtrar y mostrar la búsqueda dentro de una categoría
 
 searchInput.addEventListener('keyup', async () => {
   const searchValue = searchInput.value.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase()

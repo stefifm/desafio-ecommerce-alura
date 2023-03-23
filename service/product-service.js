@@ -1,5 +1,7 @@
+// Obtener todos los productos
 const productList = () => fetch('https://farmasalud3-api-alura.onrender.com/productos').then(res => res.json())
 
+// Crear un producto
 const createProduct = (imagen, nombre, precio, categoria, descripcion) => {
   return fetch('https://farmasalud3-api-alura.onrender.com/productos', {
     method: 'POST',
@@ -10,16 +12,19 @@ const createProduct = (imagen, nombre, precio, categoria, descripcion) => {
   })
 }
 
+// Eliminar un producto
 const deleteProduct = (id) => {
   return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`, {
     method: 'DELETE'
   })
 }
 
+// Obtener el detalle de un producto
 const productDetail = (id) => {
   return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`).then(res => res.json())
 }
 
+// Actualizar un producto
 const updateProduct = (imagen, nombre, precio, categoria, descripcion, id) => {
   return fetch(`https://farmasalud3-api-alura.onrender.com/productos/${id}`, {
     method: 'PUT',
@@ -30,6 +35,8 @@ const updateProduct = (imagen, nombre, precio, categoria, descripcion, id) => {
   }).then(res => res)
     .catch(error => console.log(error))
 }
+
+// Obtener una cantidad limitada de productos
 
 const getLimitProduct = () => {
   return fetch('https://farmasalud3-api-alura.onrender.com/productos?_limit=4').then(res => res.json())

@@ -1,5 +1,6 @@
 import { productService } from '../service/product-service.js'
 
+// Para que se muestre una imagen previa
 const imgFile = document.querySelector('#file')
 
 const previewFile = () => {
@@ -17,6 +18,8 @@ const previewFile = () => {
 }
 
 imgFile.addEventListener('change', previewFile)
+
+// Mostrar un modal de advertencia sobre el campo Categorías
 
 window.addEventListener('DOMContentLoaded', () => {
   Swal.fire({

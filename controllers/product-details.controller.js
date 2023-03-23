@@ -1,5 +1,8 @@
 import { productService } from '../service/product-service.js'
 
+// createDetails se encarga de crear un HTML para mostrar los detalles
+// de un producto
+
 const createDetails = (imagen, nombre, precio, descripcion) => {
   const line = document.createElement('div')
   line.classList.add('descripcion__container')
@@ -25,6 +28,8 @@ const createDetails = (imagen, nombre, precio, descripcion) => {
 }
 
 const section = document.querySelector('[data-tipo="section"]')
+
+// Función para se muestre el producto en detalle
 
 const showDetails = async () => {
   const url = new URL(window.location)

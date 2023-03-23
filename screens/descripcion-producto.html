@@ -43,6 +43,7 @@
       href="../assets/css/footer/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header container">
       <h1 class="logo"><a href="../index.html">FARMASALUD3</a></h1>
       <nav class="menu">
@@ -76,18 +77,20 @@
 
     <main>
       <!-- DESCRIPCION DEL PRODUCTO -->
-      <section class="descripcion container" data-tipo="section">
-
-      </section>
+      <section
+        class="descripcion container"
+        data-tipo="section"></section>
 
       <!-- PRODUCTOS SIMILARES -->
       <section class="productos-similares container">
         <h1 class="productos-similares__title">Productos Similares</h1>
-        <div class="mas-vistos__cards productos__similares_cards" data-tipo="productCards">
-        </div>
+        <div
+          class="mas-vistos__cards productos__similares_cards"
+          data-tipo="productCards"></div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer
       id="contacto"
       class="footer container">
@@ -101,7 +104,8 @@
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/mwkjnrez"
+          method="POST"
           class="form">
           <fieldset>
             <div class="input-container">
@@ -146,9 +150,16 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="../controllers/mas-vistos.controller.js"></script>
-    <script type="module" src="../controllers/product-details.controller.js"></script>
+    <!-- CONTROLLERS -->
+    <script
+      type="module"
+      src="../controllers/mas-vistos.controller.js"></script>
+    <script
+      type="module"
+      src="../controllers/product-details.controller.js"></script>
+    <!-- VALIDACIONES Y ESTILADO CON JS -->
     <script
       type="module"
       src="../js/app.js"></script>

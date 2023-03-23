@@ -40,6 +40,7 @@
       href="../assets/css/footer/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header container">
       <h1 class="logo"><a href="../index.html">FARMASALUD3</a></h1>
       <nav class="menu">
@@ -72,13 +73,16 @@
     </header>
 
     <main>
+      <!-- FORMULARIO PARA INICIAR SESIÓN -->
       <section class="inicio-sesion container">
         <div class="inicio-sesion__title">
           <h1>Iniciar Sesión</h1>
         </div>
         <form
           action="./lista-productos-admin.html"
-          class="form-inicio">
+          class="form-inicio"
+          data-tipo="formLogin"
+          >
           <fieldset>
             <div class="input__inicio__container">
               <input
@@ -132,7 +136,8 @@
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/mwkjnrez"
+          method="POST"
           class="form">
           <fieldset>
             <div class="input-container">
@@ -177,6 +182,11 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CONTROLLERS -->
+    <script type="module" src="../controllers/login-admin.controllers.js"></script>
+    <!-- VALIDACIONES Y ESTILADO CON JS -->
     <script
       type="module"
       src="../js/app.js"></script>

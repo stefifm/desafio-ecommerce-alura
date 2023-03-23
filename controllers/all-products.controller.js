@@ -4,6 +4,8 @@ const div = document.querySelector('[data-tipo="productCards"]')
 
 const searchInput = document.querySelector('[data-tipo="search"]')
 
+//  Función para mostrar todos los productos
+
 const renderProducts = async () => {
   try {
     const productList = await loadProducts()
@@ -24,6 +26,8 @@ const renderProducts = async () => {
 }
 
 renderProducts()
+
+// Función para realizar el filtrado de datos
 
 searchInput.addEventListener('keyup', async () => {
   const products = await loadProducts()

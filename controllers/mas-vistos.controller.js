@@ -3,6 +3,8 @@ import { createLineUserView } from '../utils/productsList.js'
 
 const div = document.querySelector('[data-tipo="productCards"]')
 
+// Función para mostrar los productos más vistos
+
 const renderProducts = async () => {
   try {
     const productList = await productService.getLimitProduct()

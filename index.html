@@ -46,6 +46,7 @@
       href="./assets/css/footer/footer.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header container">
       <h1 class="logo"><a href="#">FARMASALUD3</a></h1>
       <nav class="menu">
@@ -85,11 +86,15 @@
           <div class="banner__text">
             <h1 class="banner__text__title">Marzo de Belleza</h1>
             <h4 class="banner__text__subtitle">Hasta 40% de descuento en productos de belleza</h4>
-            <a href="./screens/belleza.html" class="btn">Ver Productos</a>
+            <a
+              href="./screens/belleza.html"
+              class="btn"
+              >Ver Productos</a
+            >
           </div>
         </article>
       </section>
-      <!-- TARJETAS -->
+      <!-- TARJETAS CATEGORIAS -->
       <section class="categorias container">
         <h1 class="categorias__title">Categorías</h1>
         <div class="categorias__cards">
@@ -154,12 +159,12 @@
         </div>
       </section>
 
-      <!-- Productos más vistos -->
+      <!-- PRODUCTOS MAS VISTOS -->
       <section class="mas-vistos container">
         <h1 class="mas-vistos__title">Productos más vistos</h1>
-        <div class="mas-vistos__cards" data-tipo="productCards">
-
-        </div>
+        <div
+          class="mas-vistos__cards"
+          data-tipo="productCards"></div>
       </section>
     </main>
     <!-- FOOTER -->
@@ -176,7 +181,8 @@
         </div>
 
         <form
-          action=""
+          action="https://formspree.io/f/mwkjnrez"
+          method="POST"
           class="form">
           <fieldset>
             <div class="input-container">
@@ -221,8 +227,13 @@
         <h1 class="footer__copy__text">&copy; Stefania Verónica Bruera</h1>
       </section>
     </footer>
+    <!-- SWEET ALERT -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="./controllers/mas-vistos.controller.js"></script>
+    <!-- CONTROLLERS -->
+    <script
+      type="module"
+      src="./controllers/mas-vistos.controller.js"></script>
+    <!-- VALIDACIONES Y ESTILADO CON JS -->
     <script
       type="module"
       src="./js/app.js"></script>
