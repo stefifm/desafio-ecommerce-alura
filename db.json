@@ -164,19 +164,23 @@
   "admins": [
     {
       "email": "farma@gmail.com",
-      "password": "RebellionFarmaSalud9"
+      "password": "RebellionFarmaSalud9",
+      "id": "1"
     },
     {
       "email": "test@gmail.com",
-      "password": "RebellionFarmaSalud9"
+      "password": "RebellionFarmaSalud9",
+      "id": "2"
     },
     {
       "email": "planner@gmail.com",
-      "password": "RebellionFarmaSalud9"
+      "password": "RebellionFarmaSalud9",
+      "id": "3"
     },
     {
       "email": "bru@gmail.com",
-      "password": "RebellionFarmaSalud9"
+      "password": "RebellionFarmaSalud9",
+      "id": "4"
     }
   ]
 }
