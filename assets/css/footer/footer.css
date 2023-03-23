@@ -173,3 +173,23 @@
     width: 100%;
   }
 }
+/* PC */
+
+@media screen and (min-width: 1024px) {
+  .footer__contacto__title {
+    text-align: start;
+    font-size: 3.2rem;
+  }
+  .footer__contacto_text {
+    text-align: start;
+    
+  }
+
+  .input {
+    width: 30rem;
+  }
+
+  .textarea-input {
+    width: 29rem;
+  }
+}

@@ -10,6 +10,7 @@
 
 .descripcion__img {
   width: 100%;
+  object-fit: cover;
 }
 
 .descripcion__details {
@@ -52,4 +53,44 @@
   font-size: 1.9rem;
   color: var(--color-black);
   text-align: center;
+}
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+
+  .descripcion {
+    flex-direction: row;
+
+  }
+
+  .descripcion__container {
+    width: 100%;
+    display: flex;
+    padding-left: 7%;
+    flex-direction: row;
+  }
+
+  .descripcion__img {
+    width: 40%;
+    margin-top: 5rem;
+  }
+  
+  .descripcion__details {
+    width: 50%;
+    margin-top: 8rem;
+  }
+
+  .productos__similares_cards {
+    margin-right: 8%;
+    margin-left: 10%;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 1440px) {
+  .descripcion__details {
+    margin-top: 15rem;
+  }
 }

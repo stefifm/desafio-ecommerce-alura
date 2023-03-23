@@ -30,12 +30,18 @@
   background: var(--color-white);
   border-radius: 0.5rem;
   margin-left: 0.5rem;
+  transition: all .5s ease;
+}
 
+.mas-vistos__card:hover {
+  transform: scale(1.03);
+  box-shadow: 4px 8px 19px -3px var(--color-blue-links);
 }
 
 .mas-vistos__card__img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -69,5 +75,14 @@
   .mas-vistos__cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 85%;
+  }
+ }
+
+ /* PC */
+
+ @media screen and (min-width: 1440px) {
+  .mas-vistos__cards {
+    grid-template-columns: 1fr 1fr 1fr;
   }
  }

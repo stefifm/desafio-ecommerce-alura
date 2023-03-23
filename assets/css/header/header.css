@@ -123,6 +123,12 @@
   padding: 1rem;
   justify-content: center;
   text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.menu__item__link:hover {
+  transform: scale(1.05);
+  background: var(--color-ligth-green);
 }
 
 .search__btn, .menu__open, .menu__close {
@@ -154,5 +160,35 @@
     display: flex;
     right: 10rem;
     top: 0.7rem;
+  }
+}
+
+/* PC */
+
+@media screen and (min-width: 1024px) {
+  .header__search__details{
+    right: 50%;
+    width: 30%;
+  }
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    top: 0;
+    left: 55%;
+    right: 0;
+    width: 49%;
+  }
+
+  .menu__item__link {
+    background: none;
+    width: 49%;
+    height: 50%;
+    box-shadow: none;
+  }
+
+  .menu__open {
+    display: none;
   }
 }

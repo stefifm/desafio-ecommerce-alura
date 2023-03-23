@@ -90,3 +90,11 @@
     width: 25rem;
   }
 }
+
+/* PC */
+
+@media screen and (min-width: 1024px) {
+  .input__inicio {
+    width: 33rem;
+  }
+}

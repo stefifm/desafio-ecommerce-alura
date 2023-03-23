@@ -31,9 +31,31 @@ body {
 }
 
 .btn:hover {
-  color: var(--color-ligth-green);
+  color: var(--color-dark-green);
   background: var(--color-white);
-  border: 1px solid var(--color-ligth-green);
+  border: 1px solid var(--color-dark-green);
+}
+
+.lista-productos__card__delete {
+  background: var(--color-warning);
+  color: var(--color-white);
+}
+
+.lista-productos__card__delete:hover {
+  color: var(--color-warning);
+  background: var(--color-white);
+  border: 1px solid var(--color-warning);
+}
+
+.lista-productos__card__edit {
+  background: var(--color-blue-links);
+  color: var(--color-white);
+}
+
+.lista-productos__card__edit:hover {
+  background: var(--color-white);
+  color: var(--color-blue-links);
+  border: 1px solid var(--color-blue-links);
 }
 
 /* ERROR STYLES */
@@ -83,4 +105,11 @@ body {
   color: var(--color-warning);
   margin-top: 0.5rem;
   padding-left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
 }
