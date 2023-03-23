@@ -2,6 +2,7 @@ import { productService } from '../service/product-service.js'
 
 const createDetails = (imagen, nombre, precio, descripcion) => {
   const line = document.createElement('div')
+  line.classList.add('descripcion__container')
   const content = `
   
   <img
