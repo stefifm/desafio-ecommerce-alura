@@ -54,7 +54,7 @@ Esta vez no se trata de una web para el usuario sino que está orientado hacia e
 
 ### Busqueda de productos
 
-(https://user-images.githubusercontent.com/64149462/227379951-f0753468-a95f-44f9-9e54-494ebcc8da27.gif)
+![](https://user-images.githubusercontent.com/64149462/227379951-f0753468-a95f-44f9-9e54-494ebcc8da27.gif)
 
 ### Agregando, eliminando, actualizando y obteniendo los productos
 
@@ -67,3 +67,5 @@ https://user-images.githubusercontent.com/64149462/227379964-335118c1-6c7f-4e33-
 https://user-images.githubusercontent.com/64149462/227379971-619690f1-194a-4f13-a9c2-a512fd7fe3c7.mp4
 
 # Demo
+
+https://ecommerce-farmasalud3.vercel.app/index.html
