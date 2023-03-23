@@ -1,4 +1,7 @@
 import { productService } from '../service/product-service.js'
+import { loadProducts } from '../utils/productsList.js'
+
+const div = document.querySelector('[data-tipo="tarjetas"]')
 
 const searchInput = document.querySelector('[data-tipo="search"]')
 
@@ -60,11 +63,9 @@ const createLine = (nombre, precio, id, imagen) => {
   return line
 }
 
-const div = document.querySelector('[data-tipo="tarjetas"]')
-
 const render = async () => {
   try {
-    const productList = await productService.productList()
+    const productList = await loadProducts()
     productList.forEach(data => {
       const newLine = createLine(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
@@ -84,12 +85,12 @@ const render = async () => {
 render()
 
 searchInput.addEventListener('keyup', async () => {
-  const products = await productService.productList()
-
+  const products = await loadProducts()
+  const searchValue = searchInput.value.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase()
   try {
     if (searchInput.value.toLowerCase() !== '' && searchInput.value.toLowerCase() !== null) {
       div.replaceChildren()
-      const newProducts = products.filter(product => product.nombre.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '').includes(searchInput.value.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '')))
+      const newProducts = products.filter(product => product.nombre.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().includes(searchValue))
       newProducts.forEach(data => {
         const line = createLine(data.nombre, data.precio, data.id, data.imagen)
 

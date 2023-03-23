@@ -1,41 +1,14 @@
-import { productService } from '../service/product-service.js'
+import { createLineUserView, loadProducts } from '../utils/productsList.js'
 
 const div = document.querySelector('[data-tipo="productCards"]')
 
 const searchInput = document.querySelector('[data-tipo="search"]')
 
-const createLine = (nombre, precio, id, imagen) => {
-  const line = document.createElement('article')
-  line.classList.add('mas-vistos__card')
-
-  const content = `
-
-  <img
-  src="${imagen}"
-  alt="${nombre}"
-  class="mas-vistos__card__img" />
-<div class="mas-vistos__card__details">
-  <h2 class="mas-vistos__card__name">${nombre}</h2>
-  <p class="mas-vistos__card__price">$${precio}</p>
-  <a
-    class="mas-vistos__card__link"
-    href="../screens/descripcion-producto.html?id=${id}"
-    >Ver Producto</a
-  >
-</div>
-  
-  `
-
-  line.innerHTML = content
-
-  return line
-}
-
 const renderProducts = async () => {
   try {
-    const productList = await productService.productList()
+    const productList = await loadProducts()
     productList.forEach(data => {
-      const newLine = createLine(data.nombre, data.precio, data.id, data.imagen)
+      const newLine = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
     })
   } catch (error) {
@@ -53,14 +26,14 @@ const renderProducts = async () => {
 renderProducts()
 
 searchInput.addEventListener('keyup', async () => {
-  const products = await productService.productList()
-
+  const products = await loadProducts()
+  const searchValue = searchInput.value.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase()
   try {
-    if (searchInput.value.toLowerCase() !== '' && searchInput.value.toLowerCase() !== null) {
+    if (searchValue !== '' && searchValue !== null) {
       div.replaceChildren()
-      const newProducts = products.filter(product => product.nombre.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '').includes(searchInput.value.toLowerCase().replace(/[^a-zA-Z0-9 ]/g, '')))
+      const newProducts = products.filter(product => product.nombre.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().includes(searchValue))
       newProducts.forEach(data => {
-        const line = createLine(data.nombre, data.precio, data.id, data.imagen)
+        const line = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
 
         div.appendChild(line)
       })
