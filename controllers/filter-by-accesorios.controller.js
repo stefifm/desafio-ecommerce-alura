@@ -1,40 +1,19 @@
-import { productService } from '../service/product-service.js'
-
-const createLine = (nombre, precio, id, imagen) => {
-  const line = document.createElement('article')
-  line.classList.add('mas-vistos__card')
-
-  const content = `
-
-  <img
-  src="${imagen}"
-  alt="${nombre}"
-  class="mas-vistos__card__img" />
-<div class="mas-vistos__card__details">
-  <h2 class="mas-vistos__card__name">${nombre}</h2>
-  <p class="mas-vistos__card__price">$${precio}</p>
-  <a
-    class="mas-vistos__card__link"
-    href="../screens/descripcion-producto.html?id=${id}"
-    >Ver Producto</a
-  >
-</div>
-  
-  `
-
-  line.innerHTML = content
-
-  return line
-}
+import { createLineUserView, loadProducts } from '../utils/productsList.js'
 
 const div = document.querySelector('[data-tipo="productCards"]')
+const searchInput = document.querySelector('[data-tipo="search"]')
+
+const loadProductsFilter = async () => {
+  const productList = await loadProducts()
+  const category = productList.filter(data => data.categoria === 'accesorios')
+  return category
+}
 
 const renderProducts = async () => {
   try {
-    const productList = await productService.productList()
-    const categorie = productList.filter(data => data.categoria === 'accesorios')
-    categorie.forEach(data => {
-      const newLine = createLine(data.nombre, data.precio, data.id, data.imagen)
+    const accesorios = await loadProductsFilter()
+    accesorios.forEach(data => {
+      const newLine = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
     })
   } catch (error) {
@@ -50,3 +29,31 @@ const renderProducts = async () => {
 }
 
 renderProducts()
+
+searchInput.addEventListener('keyup', async () => {
+  const searchValue = searchInput.value.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase()
+  const category = await loadProductsFilter()
+
+  try {
+    if (searchValue !== '' && searchValue !== null) {
+      div.replaceChildren()
+      const filterCategories = category.filter(item => item.nombre.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().includes(searchValue))
+      filterCategories.forEach(data => {
+        const line = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
+        div.appendChild(line)
+      })
+    } else {
+      div.replaceChildren()
+      renderProducts()
+    }
+  } catch (error) {
+    Swal.fire({
+      title: 'Hubo un error!!!',
+      text: 'Se produjo un error. Intente más tarde',
+      icon: 'error',
+      confirmButtonText: 'Continuar'
+    }).then(() => {
+      window.location.href = '../index.html'
+    })
+  }
+})
