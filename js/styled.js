@@ -10,7 +10,7 @@ const openMenu = () => {
   navList.style.display = 'flex'
   closeMenuBtn.style.display = 'inline-block'
   openMenuBtn.style.display = 'none'
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 768 && searchBox) {
     searchBox.style.display = 'none'
   }
 }
@@ -29,7 +29,9 @@ const toggleSearch = () => {
   navList.style.display = 'none'
 }
 
-openSearchBtn.addEventListener('click', toggleSearch)
+if (openSearchBtn) {
+  openSearchBtn.addEventListener('click', toggleSearch)
+}
 
 // Función para cerrar el menú
 

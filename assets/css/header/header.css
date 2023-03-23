@@ -146,6 +146,13 @@
 
 /* TABLETS */
 
+@media screen and (min-width: 425px) {
+  .input__search {
+    width: 26.43rem;
+    
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding-right: 5%;
