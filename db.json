@@ -160,5 +160,23 @@
       "imagen": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/213/051/products/rutina-dermaglos-piel-mixta1-b5957cd42599e6834116521213159993-640-0.jpeg",
       "id": "20"
     }
+  ],
+  "admins": [
+    {
+      "email": "farma@gmail.com",
+      "password": "RebellionFarmaSalud9"
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "RebellionFarmaSalud9"
+    },
+    {
+      "email": "planner@gmail.com",
+      "password": "RebellionFarmaSalud9"
+    },
+    {
+      "email": "bru@gmail.com",
+      "password": "RebellionFarmaSalud9"
+    }
   ]
 }
