@@ -4,11 +4,28 @@ const div = document.querySelector('[data-tipo="productCards"]')
 
 const searchInput = document.querySelector('[data-tipo="search"]')
 
+window.addEventListener('DOMContentLoaded', () => {
+  renderProducts()
+})
+
 //  Función para mostrar todos los productos
 
 const renderProducts = async () => {
+  const newDiv = document.createElement('div')
+  const loading = `
+
+  <div class="loader">
+  <div class="scanner">
+    <h1 class="scanner__loading">Loading...</h1>
+  </div>
+</div>
+  
+  `
+  newDiv.innerHTML = loading
+  div.appendChild(newDiv)
   try {
     const productList = await loadProducts()
+    div.replaceChildren()
     productList.forEach(data => {
       const newLine = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
@@ -24,8 +41,6 @@ const renderProducts = async () => {
     })
   }
 }
-
-renderProducts()
 
 // Función para realizar el filtrado de datos
 

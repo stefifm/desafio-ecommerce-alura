@@ -12,11 +12,28 @@ const loadProductsFilter = async () => {
   return category
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+  renderProducts()
+})
+
 // Función para mostrar los productos filtrados
 
 const renderProducts = async () => {
+  const newDiv = document.createElement('div')
+  const loading = `
+
+  <div class="loader">
+  <div class="scanner">
+    <h1 class="scanner__loading">Loading...</h1>
+  </div>
+</div>
+  
+  `
+  newDiv.innerHTML = loading
+  div.appendChild(newDiv)
   try {
     const nutricionDeportes = await loadProductsFilter()
+    div.replaceChildren()
     nutricionDeportes.forEach(data => {
       const newLine = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
@@ -32,8 +49,6 @@ const renderProducts = async () => {
     })
   }
 }
-
-renderProducts()
 
 // Función para filtrar y mostrar la búsqueda dentro de una categoría
 

@@ -66,11 +66,28 @@ const createLine = (nombre, precio, id, imagen) => {
   return line
 }
 
+window.addEventListener('DOMContentLoaded', () => {
+  render()
+})
+
 // Para mostrar todos los productos en el listado del administrador
 
 const render = async () => {
+  const newDiv = document.createElement('div')
+  const loading = `
+
+  <div class="loader">
+  <div class="scanner">
+    <h1 class="scanner__loading">Loading...</h1>
+  </div>
+</div>
+  
+  `
+  newDiv.innerHTML = loading
+  div.appendChild(newDiv)
   try {
     const productList = await loadProducts()
+    div.replaceChildren()
     productList.forEach(data => {
       const newLine = createLine(data.nombre, data.precio, data.id, data.imagen)
       div.appendChild(newLine)
@@ -86,8 +103,6 @@ const render = async () => {
     })
   }
 }
-
-render()
 
 // Para realizar la búsqueda de un producto en el listado del administrador
 

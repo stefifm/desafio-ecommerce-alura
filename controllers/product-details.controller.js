@@ -29,6 +29,10 @@ const createDetails = (imagen, nombre, precio, descripcion) => {
 
 const section = document.querySelector('[data-tipo="section"]')
 
+window.addEventListener('DOMContentLoaded', () => {
+  showDetails()
+})
+
 // Función para se muestre el producto en detalle
 
 const showDetails = async () => {
@@ -37,8 +41,21 @@ const showDetails = async () => {
 
   if (id === null) return (window.alert('Hubo un error'))
 
+  const newDiv = document.createElement('div')
+  const loading = `
+
+  <div class="loader">
+  <div class="scanner">
+    <h1 class="scanner__loading">Loading...</h1>
+  </div>
+</div>
+  
+  `
+  newDiv.innerHTML = loading
+  section.appendChild(newDiv)
   try {
     const product = await productService.productDetail(id)
+    section.replaceChildren()
     if (product.nombre && product.precio && product.descripcion) {
       const newLine = createDetails(product.imagen, product.nombre, product.precio, product.descripcion)
       section.appendChild(newLine)
@@ -56,5 +73,3 @@ const showDetails = async () => {
     })
   }
 }
-
-showDetails()

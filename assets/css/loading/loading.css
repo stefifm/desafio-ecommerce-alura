@@ -1,0 +1,46 @@
+.loader {
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.scanner .scanner__loading {
+  color: transparent;
+  font-size: 3rem;
+  font-weight: var(--font-weight-title-link);
+  position: relative;
+  overflow: hidden;
+}
+
+.scanner .scanner__loading::before {
+  content: "Loading...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid var(--color-blue-links);
+  overflow: hidden;
+  color: var(--color-blue-links);
+  animation: load91371 2s linear infinite;
+}
+
+@keyframes load91371 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+
+  10%,20%,30%,40%,50%,60%,70%,80%,90%,100% {
+    border-right-color: transparent;
+  }
+
+  11%,21%,31%,41%,51%,61%,71%,81%,91% {
+    border-right-color: var(--color-blue-links);
+  }
+
+  60%, 80% {
+    width: 100%;
+  }
+}
