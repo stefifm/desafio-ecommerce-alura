@@ -51,9 +51,16 @@ searchInput.addEventListener('keyup', async () => {
     if (searchValue !== '' && searchValue !== null) {
       div.replaceChildren()
       const newProducts = products.filter(product => product.nombre.replace(/[^a-zA-Z0-9 ]/g, '').toLowerCase().includes(searchValue))
+      if (newProducts.length === 0) {
+        Swal.fire({
+          title: 'No se encontró el producto',
+          text: 'El producto que busca no se encuentra',
+          icon: 'error',
+          confirmButtonText: 'Continuar'
+        })
+      }
       newProducts.forEach(data => {
         const line = createLineUserView(data.nombre, data.precio, data.id, data.imagen)
-
         div.appendChild(line)
       })
     } else {
