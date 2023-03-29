@@ -198,4 +198,8 @@
   .menu__open {
     display: none;
   }
+
+  .menu__close {
+    display: none !important;
+  }
 }

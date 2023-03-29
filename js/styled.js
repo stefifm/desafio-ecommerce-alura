@@ -8,8 +8,8 @@ const searchBox = document.querySelector('.header__search__details')
 
 const openMenu = () => {
   navList.style.display = 'flex'
-  closeMenuBtn.style.display = 'inline-block'
   openMenuBtn.style.display = 'none'
+  closeMenuBtn.style.display = 'inline-block'
   if (window.innerWidth < 768 && searchBox) {
     searchBox.style.display = 'none'
   }
